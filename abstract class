@@ -1,0 +1,39 @@
+package Sem4_JAVA;
+
+public abstract class Bank 
+{
+	abstract int getbalance();
+}
+public class BankA extends Bank
+{
+	int getbalance()
+	{
+		return 100;
+	}
+}
+public class BankB extends Bank
+{
+	int getbalance()
+	{
+		return 150;
+	}
+}
+public class BankC extends Bank
+{
+	int getbalance()
+	{
+		return 200;
+	}
+}
+public class BankClasses {
+
+	public static void main(String[] args) {
+		Bank ba=new BankA();
+		Bank bb=new BankB();
+		Bank bc=new BankC();
+		System.out.println("deposited amount in bank A:$"+ba.getbalance());
+		System.out.println("deposited amount in bank B:$"+bb.getbalance());
+		System.out.println("deposited amount in bank C:$"+bc.getbalance());
+	}
+
+}
